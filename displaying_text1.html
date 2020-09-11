@@ -1,0 +1,17 @@
+<html>
+<head>
+<style>
+p.a{white-space: nowrap; width: 200px; border: 1px solidblack; overflow: hidden; text-overflow: clip;}
+p.b{white-space: nowrap; width: 200px; border: 1px solidblack; overflow: hidden; text-overflow: ellipsis;}
+div.test {white-space: nowrap; width: 200px; overflow:hidden; border: 1px solid black;}
+div.test:hover {text-overflow: inherit; overflow:visible;}
+p.b:hover{overflow: visible;}
+</style>
+</head>
+<body>
+<p class="a">India is my country. All Indians are my brothers and sisters. I love my country.</p>
+<p class="b">India is my country. All Indians are my brothers and sisters. I love my country.</p>
+<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div><br>
+<div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+</body>
+</html>
